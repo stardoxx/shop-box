@@ -1,13 +1,7 @@
 import { ActionTypes } from "../contants/action-types"; 
 
 const initialState = {
-    products : [
-        {
-            id: 1,
-            name: 'Ashutosh',
-            category: 'awesome'
-        }
-    ]
+    products : []
 
 }
 
@@ -15,7 +9,9 @@ const initialState = {
 export const productReducer = (state = initialState,{type, payload}) => {
     switch(type){
         case ActionTypes.setProducts: 
-        return state;
+        return {...state,
+            products: payload
+        }
     default: 
         return state;
     }
