@@ -20,6 +20,7 @@ const ProductComponent = () => {
                     <div className="meta price">$ {price}</div>
                     <div className="meta">{category}</div>
                   </div>
+                  
                 </div>
               </div>
             </Link>
