@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const ProductComponent = () => {
     
     const products = useSelector((state) => state.allProducts.products);
-    //!function for mapping products recieved.
+    //function for mapping products recieved.
     const productMap = products.map((product) =>{
         const { id, title, image, price, category } = product;
         return(
