@@ -8,7 +8,7 @@ import ProductListing from './components/ProductListing'
 function App() {
   return (
     <div className = 'App'>
-      <Router>
+      {/* <Router>
           <Switch>
           <Header/>
           <Route path = '/' exact component = {ProductListing} />
@@ -16,7 +16,11 @@ function App() {
           <Route>404 not found</Route>
           </Switch>
       </Router>
+    </div> */}
+    <Header/>
+    <ProductListing/>
     </div>
+
   )
 }
 
