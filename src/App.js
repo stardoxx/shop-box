@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ProductDetails from './components/ProductDetails';
 import ProductListing from './components/ProductListing'
 import CategoryListing from './components/CategoryListing';
+import DisplayCategoryComponent from './components/DisplayCategoryComponent'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
     <Header/>
     <CategoryListing/>
     {/* <ProductListing/> */}
+    {/* <DisplayCategoryComponent/> */}
     </div>
 
   )

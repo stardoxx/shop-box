@@ -4,13 +4,35 @@ const initialState = {
     categories: [],
 }
 
+const selectedCategoryState = {
+    selectedCategory:false,
+    category: '',
+}
+
+export const selectedCategoryReducer = (state = selectedCategoryState, {type, payload}) => {
+    switch (type) {
+        case ActionTypes.SELECTED_CATEGORY:
+            return{
+                ...state,
+                selectedCategory:true,
+                category: payload
+            }
+            
+    
+        default:
+            return state;
+    }
+}
+
+
+
 
 export const categoryReducer = (state= initialState, {type, payload}) => {
     switch (type) {
         case ActionTypes.SET_CATEGORY:
             return {
                 ...state,
-                categories: payload
+                categories: ['All', ...payload]
             }
     
         default:

@@ -4,6 +4,9 @@ import axios from 'axios';
 import {useSelector, useDispatch} from 'react-redux';
 import {setCategories} from '../redux/actions/categoryActions';
 import CategoryComponent from './CategoryComponent';
+import DisplayCategoryComponent from './DisplayCategoryComponent';
+
+
 const CategoryListing = () => {
    
     const  categoryList = useSelector((state) => state);
@@ -26,6 +29,7 @@ const CategoryListing = () => {
         <div className = 'category-listing'>
             category list 
             <CategoryComponent/>
+            <DisplayCategoryComponent/>
         </div>
     )
 }

@@ -6,3 +6,10 @@ export const setCategories = (categories) => {
         payload: categories
     };
 };
+
+export const selectedCategory = (category) => {
+    return {
+        type: ActionTypes.SELECTED_CATEGORY,
+        payload: category
+    }
+}
