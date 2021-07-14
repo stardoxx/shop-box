@@ -3,7 +3,7 @@ import Header from './components/Header';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ProductDetails from './components/ProductDetails';
 import ProductListing from './components/ProductListing'
-
+import CategoryListing from './components/CategoryListing';
 
 function App() {
   return (
@@ -18,7 +18,8 @@ function App() {
       </Router>
     </div> */}
     <Header/>
-    <ProductListing/>
+    <CategoryListing/>
+    {/* <ProductListing/> */}
     </div>
 
   )

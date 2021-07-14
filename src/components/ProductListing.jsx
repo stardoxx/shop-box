@@ -25,10 +25,9 @@ const ProductListing = () => {
 
     return (
         <div className="ui grid container">
-            <h1>product listing</h1>
+            
             <ProductComponent/>
-            <h2>product listing</h2>
-            {console.log('product listing')}
+            
         </div>
     )
 }

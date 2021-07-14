@@ -1,0 +1,15 @@
+.category-listing{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.category-component-array{
+    display: flex;
+    flex-direction:row;
+}
+
+.category-component{
+    margin-left:10px;
+    margin-right:10px; 
+}
