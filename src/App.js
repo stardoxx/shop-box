@@ -5,6 +5,7 @@ import ProductDetails from './components/ProductDetails';
 import ProductListing from './components/ProductListing'
 import CategoryListing from './components/CategoryListing';
 import DisplayCategoryComponent from './components/DisplayCategoryComponent'
+import CartDisplay from './components/cart/CartDisplay';
 
 function App() {
   return (
@@ -20,8 +21,10 @@ function App() {
     </div> */}
     <Header/>
     <CategoryListing/>
+    <CartDisplay/>
     {/* <ProductListing/> */}
     {/* <DisplayCategoryComponent/> */}
+    
     </div>
 
   )
