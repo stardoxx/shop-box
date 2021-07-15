@@ -5,7 +5,7 @@ import {useSelector, useDispatch} from 'react-redux';
 import {setCategories} from '../redux/actions/categoryActions';
 import CategoryComponent from './CategoryComponent';
 import DisplayCategoryComponent from './DisplayCategoryComponent';
-
+import ProductComponent from './ProductComponent';
 
 const CategoryListing = () => {
    
@@ -30,6 +30,7 @@ const CategoryListing = () => {
             category list 
             <CategoryComponent/>
             <DisplayCategoryComponent/>
+            <ProductComponent/>
         </div>
     )
 }

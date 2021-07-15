@@ -1,7 +1,7 @@
 import React, { useEffect}from 'react'
 import axios from 'axios';
 import {useSelector, useDispatch} from 'react-redux'
-
+import { setProducts} from '../redux/actions/productActions'
 
 const DisplayCategoryComponent = () => {
     // const selected = 'jewelery';
@@ -9,16 +9,25 @@ const DisplayCategoryComponent = () => {
     const selected = useSelector((state) => state.selectedCategory.category)
     const dispatch = useDispatch();
     const fetchCategory = async() => {
-        const response = await axios.get(`https://fakestoreapi.com/products/category/${selected}`)
+        if(selected !== 'All'){
+            const response = await axios.get(`https://fakestoreapi.com/products/category/${selected}`)
         .catch((error) => {console.log(error)});
         console.log(response.data);
-
+        dispatch(setProducts(response.data));
+        }
+        else{
+            const response = await axios.get(`https://fakestoreapi.com/products`)
+            .catch((error) => {console.log(error)});
+            console.log(response.data);
+            dispatch(setProducts(response.data));
+        }
     }
 
     const fetchAll = async() =>{
         const response = await axios.get(`https://fakestoreapi.com/products`)
         .catch((error) => {console.log(error)});
         console.log(response.data);
+        dispatch(setProducts(response.data));
     }
     
     useEffect(() => {
@@ -28,7 +37,7 @@ const DisplayCategoryComponent = () => {
         else{
             fetchAll();
         }
-    },)
+    },[selected])
 
 
     return (
