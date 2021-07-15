@@ -6,6 +6,7 @@ import ProductListing from './components/ProductListing'
 import CategoryListing from './components/CategoryListing';
 import DisplayCategoryComponent from './components/DisplayCategoryComponent'
 import CartDisplay from './components/cart/CartDisplay';
+import CartPrices from './components/cart/CartPrices.jsx'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
     <Header/>
     <CategoryListing/>
     <CartDisplay/>
+    <CartPrices/>
     {/* <ProductListing/> */}
     {/* <DisplayCategoryComponent/> */}
     
