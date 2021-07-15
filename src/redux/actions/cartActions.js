@@ -13,3 +13,19 @@ export const removeFromCart = (productId) => {
         payload: productId
     }
 }
+
+export const incQuantity = (productId) => {
+    return{
+        type: ActionTypes.INC_QUANTITY,
+        payload: productId
+    }
+}
+
+export const decQuantity = (productId) => {
+    return{
+        type: ActionTypes.DEC_QUANTITY,
+        payload: productId
+    }
+}
+
+
