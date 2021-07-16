@@ -41,7 +41,7 @@ const DisplayCategoryComponent = () => {
 
 
     return (
-        <div>
+        <div className= 'home-page-products'>
             <ProductComponent/>
         </div>
     )

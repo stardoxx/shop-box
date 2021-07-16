@@ -12,54 +12,41 @@ const ProductComponent = () => {
     const productMap = products.map((product) =>{
         const { id, title, image, price, category } = product;
         return(
-            <div className="four wide column" key={id}>
-            {/* <Link to={`/product/${id}`}> */}
-              <div className="ui link cards">
-                <div className="card">
-                  <div className="image">
-                    <img src={image} alt={title} />
-                  </div>
-                  <div className="content">
+            
+            
+              
+                <div className="product-card">
+                  
+                    <img className = "product-image" src={image} alt={title} />
+                  
+                  <div className="product-content">
                     <div className="header">{title}</div>
-                    <div className="meta price">$ {price}</div>
-                    <div className="meta">{category}</div>
-                    {/* <button className="add-card"
-                    onClick = {() => {
-                      console.log(title);
-                      dispatch(addToCart(product));
-                    }}
-                    >Add To Cart</button>
-                    <button className="remove-cart"
+                    <div className="product-price">RS {price}</div>
+                    <div className="product-category">Category: {category}</div>
+                    
+                </div>
+                {cartItems.includes(product)? <p className="add-cart"
                     onClick = {() => {
                       console.log(title);
                       dispatch(removeFromCart(id));
                     }}
-                    >Remove From Cart</button>
-                   */}
-                  {cartItems.includes(product)? <button className="remove-cart"
-                    onClick = {() => {
-                      console.log(title);
-                      dispatch(removeFromCart(id));
-                    }}
-                    >Remove From Cart</button> :
-                    <button className="add-card"
+                    >Remove From Cart</p> :
+                    <p className="add-cart"
                     onClick = {() => {
                       console.log(title);
                       dispatch(addToCart(product));
                     }}
-                    >Add To Cart</button>
+                    >Add To Cart</p>
                     }
                 </div>
-                </div>
-              </div>
-            {/* </Link> */}
-          </div>
+              
+            
         ) 
         
     })
 
     return (
-        <div>
+        <div className="product-list">
             {productMap}
         </div>
     )

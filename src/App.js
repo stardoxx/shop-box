@@ -12,6 +12,7 @@ import CartPage from './pages/CartPage';
 
 function App() {
   return (
+    <Router>
     <div className = 'App'>
       {/* <Router>
           <Switch>
@@ -28,10 +29,18 @@ function App() {
     <CartPrices/> */}
     {/* <ProductListing/> */}
     {/* <DisplayCategoryComponent/> */}
-    <HomePage/>
-      <CartPage/>
+    {/* <HomePage/>
+      <CartPage/> */}
+      
+          
+          <Header/>
+          <Switch>
+          <Route path = '/' exact component = {HomePage} />
+          <Route path = '/cart'  component = {CartPage} />
+          
+          </Switch>
     </div>
-
+      </Router>
   )
 }
 
