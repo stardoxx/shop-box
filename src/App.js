@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import CartDisplay from './components/cart/CartDisplay';
 // import CartPrices from './components/cart/CartPrices.jsx'
 import HomePage from './pages/HomePage';
+import CartPage from './pages/CartPage';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
     {/* <ProductListing/> */}
     {/* <DisplayCategoryComponent/> */}
     <HomePage/>
+      <CartPage/>
     </div>
 
   )
