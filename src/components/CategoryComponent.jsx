@@ -21,7 +21,7 @@ const CategoryComponent = () => {
 
     return (
         <div className = "category-component-array">
-            category components
+            {/* category components */}
             {categoryMap}
         </div>
     )

@@ -27,10 +27,10 @@ const CategoryListing = () => {
    
     return (
         <div className = 'category-listing'>
-            category list 
+            {/* category list  */}
             <CategoryComponent/>
-            <DisplayCategoryComponent/>
-            <ProductComponent/>
+             <DisplayCategoryComponent/>
+            {/*<ProductComponent/> */}
         </div>
     )
 }

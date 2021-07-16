@@ -2,7 +2,7 @@ import React, { useEffect}from 'react'
 import axios from 'axios';
 import {useSelector, useDispatch} from 'react-redux'
 import { setProducts} from '../redux/actions/productActions'
-
+import ProductComponent from './ProductComponent';
 const DisplayCategoryComponent = () => {
     // const selected = 'jewelery';
     const checked = useSelector((state) => state.selectedCategory.selectedCategory);
@@ -42,7 +42,7 @@ const DisplayCategoryComponent = () => {
 
     return (
         <div>
-            display category
+            <ProductComponent/>
         </div>
     )
 }
