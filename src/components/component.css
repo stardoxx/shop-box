@@ -23,31 +23,54 @@
     cursor: pointer;
 }
 
-
-
-.header{
-    margin-left: 32px;
-    font: message-box;
+.category-component-style{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid;
+    border-radius: 16px;
+    padding: 9px;
+    min-width: 75px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
 }
 
-.product-card{
-    width: 400px;
-    height: 329px;
-    /* border: 1px solid; */
+
+
+.header {
+    margin-left: 11px;
+    font: message-box;
+    width: 216px;
+}
+
+.product-card {
+    width: 361px;
+    height: 344px;
+   /* border: 1px solid;
     border-radius: 34px;
+    padding-top: 4px;
+    /* padding: 3px;
 }
 
 .product-content{
-    background: lightgray;
-    border-radius: 13px;
-    position: relative;
-    top: -6px;
-    left: -8px;
-    width: 310px;
-    padding: 13px;
-    background-color: #FEF7CD;
-    border: 1.01px solid #BB8760;
+    
+        /* background: lightgray; */
+        border-radius: 13px;
+        position: relative;
+        top: -6px;
+        left: 46px;
+        width: 310px;
+        padding: 13px;
+        /* background-color: #FEF7CD;
+        border: 1.01px solid #BB8760; */
+    
 }
+
+.product-card:hover{
+    border: 1.01px solid ;
+    box-shadow: 4px 4px #AAAAAA;
+}
+
 /* .App{
     background-color: #FDF6F0
 } */
@@ -69,30 +92,38 @@
 }
 
 
-.add-cart{
-    background-color: #FFF1F1;
-    width: 130px;
-    border-radius: 3px;
-    padding: 3px;
+.add-cart {
+        /* background-color: #FFF1F1; */
+    /* width: 153px; */
+    border-radius: 10px;
+    padding: 6px;
+    /* padding-left: 15px; */
     position: relative;
-    top: -7px;
-    border: 1.01px solid #BB8762;
+    top: 7px;
+    /* border: 1.01px solid #BB8762; */
     cursor: pointer;
     font-family: monospace;
-
+    left: 72px;
+    background: white;
 }
+
+.add-cart:hover{
+    border: 1px solid;
+    background-color: #DDDDDD;
+}
+
 
 .product-list{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 23px;
-    margin-left: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-gap: 6px; */
+    margin-left: -20px;
 }
 
-.product-image{
-    width: 343px;
-    height: 200px;
-    margin-left: 30px;
+.product-image {
+    width: 192px;
+    height: 170px;
+    margin-left: 65px;
 }
 
 /* img{

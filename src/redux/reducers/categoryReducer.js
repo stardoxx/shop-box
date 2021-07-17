@@ -6,7 +6,7 @@ const initialState = {
 
 const selectedCategoryState = {
     selectedCategory:false,
-    category: '',
+    category: 'All',
 }
 
 export const selectedCategoryReducer = (state = selectedCategoryState, {type, payload}) => {

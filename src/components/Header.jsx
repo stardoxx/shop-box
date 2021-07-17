@@ -1,12 +1,13 @@
 import React from 'react'
 import CartItems from './cart/CartItems';
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div className = 'ui fixed menu'>
             <div className="ui container center">
-                <h2>Shop Box</h2>
+               <Link to={'/'}> <h2>Shop Box</h2></Link>
             </div>
-            <CartItems/>
+            <Link to = {'/cart'} >{<CartItems/>}</Link>
         </div>
     )
 }

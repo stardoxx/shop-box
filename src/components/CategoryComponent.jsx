@@ -7,11 +7,11 @@ const CategoryComponent = () => {
     const dispatch = useDispatch();
     const categories = useSelector((state) => state.allCategory.categories);
     console.log(categories);
-  
+    const selected = useSelector((state) => state.selectedCategory.category);
 
     const categoryMap = categories.map((category,index) => {
         return(
-            <div className="category-component" key = {index}
+            <div className={(selected !== category)? "category-component": "category-component-style"} key = {index}
              onClick={()=> {
                 console.log(category); 
                 dispatch(selectedCategory(category));}}
