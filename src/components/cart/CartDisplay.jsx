@@ -10,13 +10,15 @@ const CartDisplay = () => {
         return(
             <div className="cart-item" key={id}>
                 <img src= {image} alt= {image} className="cart-product-image" />
-                <p className="cart-item-title">{title}</p>
-                <p className="cart-item-price">{Math.round(price * quantity)}</p>
-                <p className="cart-item-description">{description}</p>
+                <p className="cart-item-title">Product Name: {title}</p>
+                <p className="cart-item-price">Price: Rs {Math.round(price)}</p>
+                <p className="cart-item-description">Description: {description}</p>
+                <div className="cart-buttons">
+                    <div className="quantity">Quantity</div>
                 <button className="inc-quantity"
                     onClick = {() => {dispatch(incQuantity(id))}}
                 >+</button>
-                <p className="item-quantity">quantity: {(quantity) ? quantity : dispatch(removeFromCart(id)) }</p>
+                <p className="item-quantity">{(quantity) ? quantity : dispatch(removeFromCart(id)) }</p>
                 <button className="dec-quantity"
                     onClick = {() => {dispatch(decQuantity(id))}}
                 >-</button>
@@ -26,6 +28,7 @@ const CartDisplay = () => {
                       dispatch(removeFromCart(id));
                     }}
                     >Remove From Cart</button>
+                </div>
             </div>
         )
     })
@@ -33,7 +36,7 @@ const CartDisplay = () => {
     
     return (
         <div className = "cart-list">
-            <h4>cart display</h4>
+            {cartProducts.length? <h4 id = "cart-display">cart display</h4>: ''}
             {mapCart}
         </div>
     )

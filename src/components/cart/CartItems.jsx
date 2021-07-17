@@ -6,8 +6,8 @@ const CartItems = () => {
     const cart = useSelector((state) => state.cart);
     const count = cart.length;
     return (
-        <div>
-            Cart: {count}
+        <div className = "cart-items">
+            {count}
         </div>
     )
 }

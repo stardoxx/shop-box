@@ -3,7 +3,7 @@ import CartPrices from '../components/cart/CartPrices';
 import CartDisplay from '../components/cart/CartDisplay';
 const CartPage = () => {
     return (
-        <div>
+        <div className="cart-page">
             <CartPrices/>
             <CartDisplay/>
         </div>

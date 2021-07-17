@@ -23,6 +23,138 @@
     cursor: pointer;
 }
 
+a{
+    color:black;
+}
+.cart-page{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.checkout{
+    margin-top: 100px;
+    margin-left: 20px;
+    border: 2px solid #BEAEE2;
+    height: 255px;
+    width: 366px;
+    padding: 29px;
+    border-radius: 36px;
+}
+
+
+.remove-cart{
+    margin-left: 10px;
+    background-color: #F9F9F9;
+    color: #BEAEE2;
+}
+
+.remove-cart:hover{
+    background-color: #BEAEE2;
+    color: #F9F9F9;
+}
+
+.item-quantity{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: cursive;
+    position: relative;
+    /* align-content: center; */
+    top: 5px;
+}
+
+.cart-buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-product-image{
+    width: 150px;
+    height: 109px;
+}
+
+/* #icon{
+    position: relative;
+    top: 12px;
+    right: 1900px;
+} */
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item {
+    width: 467px;
+    height: 450px;
+    border: 1px solid #BEAEE2;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 20px;
+    padding-bottom: -16px;
+}
+
+
+
+.cart-list {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    /* overflow-y: auto; */
+    /* min-height: 0px; */
+    /* overflow: auto; */
+    margin-right: 200px;
+    width: 540px;
+}
+
+.quantity{
+    margin-right: 16px;
+    font: icon;
+    position: relative;
+    top: 9px;
+}
+
+
+#cart-display{
+    /* border: 1px solid; */
+    width: 116px;
+    height: 41px;
+    padding: 8px;
+    font-size: larger;
+    font-family: cursive;
+}
+
+.cart-item-title{
+    font-family: cursive;
+}
+
+.cart-item-price{
+    font-family: emoji;
+}
+
+.cart-item-description {
+    font: menu;
+}
+
+.cart-items {
+    border: 1px solid;
+    border-radius: 23px;
+    /* padding: 0px; */
+    background-color: #FFE9D6;
+    background-color: #ffe9d6;
+    height: 19px;
+    padding-left: 2px;
+    padding-right: 2px;
+    position: relative;
+    left: -5px;
+    top: -3px;
+    
+      
+    
+}
+
 .category-component-style{
     margin-left: 10px;
     margin-right: 10px;
@@ -44,12 +176,16 @@
 }
 
 .product-card {
-    width: 361px;
-    height: 344px;
-   /* border: 1px solid;
-    border-radius: 34px;
-    padding-top: 4px;
-    /* padding: 3px;
+    width: 366px;
+    height: 393px;
+    border-radius: 13px;
+    position: relative;
+    top: -6px;
+    left: 46px;
+    width: 326px;
+    padding: 13px;
+    margin-top: 33px;
+    padding-top: 19px;
 }
 
 .product-content{

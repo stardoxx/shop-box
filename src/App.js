@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import CartPrices from './components/cart/CartPrices.jsx'
 import HomePage from './pages/HomePage';
 import CartPage from './pages/CartPage';
-
+import SignInSignUp from './pages/SignInSignUp';
 function App() {
   return (
     <Router>
@@ -34,10 +34,11 @@ function App() {
       
           
           <Header/>
+          {/* <SignInSignUp/> */}
           <Switch>
           <Route path = '/' exact component = {HomePage} />
           <Route path = '/cart'  component = {CartPage} />
-          
+          {/* <Route path = '/signin'  component = {SignInSignUp}/> */}
           </Switch>
     </div>
       </Router>
