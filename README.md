@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+Old deployed link was http://shop-box.surge.sh/ new one with continous deployment: https://nostalgic-meninsky-145a9c.netlify.app/
 ## Available Scripts
 
 In the project directory, you can run:
