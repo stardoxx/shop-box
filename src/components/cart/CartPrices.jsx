@@ -8,7 +8,7 @@ const CartPrices = () => {
     return (
         <div className="checkout">
             <h3>You have {article} articles</h3>
-            <h3>Subtotal: Rs {cost}</h3> 
+            <h3>Subtotal: Rs {Math.ceil(cost)}</h3> 
         </div>
     )
 }
