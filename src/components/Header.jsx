@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <div className = 'ui fixed menu'>
             <div className="ui container center">
-               <Link to={'/'}> <h2>Shop Box</h2></Link>
+               <Link to={'/'}> <h2>Shop Box: just shop</h2></Link>
             </div>
             {/* <SignInLink/> */}
             <Link to = {'/cart'} >
